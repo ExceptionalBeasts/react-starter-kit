@@ -1,6 +1,7 @@
 # React Starter Kit
 Implements a full stack necessary for building a front-end application, complete with a dev server and hot reloading, using:
 * React
+* React Router
 * Redux (with thunks)
 * Sass or Post CSS
 * Webpack and Webpack Dev Server
