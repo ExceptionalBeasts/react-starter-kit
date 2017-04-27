@@ -1,5 +1,5 @@
 # React Starter Kit
-This implements a complete stack necessary for building a front-end application complete with a dev server and hot reloading using:
+Implements a full stack necessary for building a front-end application, complete with a dev server and hot reloading, using:
 * React
 * Redux (with thunks)
 * Sass or Post CSS
