@@ -19,7 +19,7 @@
           },
           { test: /\.json$/, loader: 'json-loader' },
           { test: /\.html?$/, loader: 'html-loader' },
-          { test: /\.(css|sass)$/, loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader!postcss-loader!sass-loader' }) },
+          { test: /\.(css|scss)$/, loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader!postcss-loader!sass-loader' }) },
           { test: /\.(png|jpg|jpeg|gif|ico)$/, loader: 'file-loader?name=[path][name].[ext]' },
           { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url-loader?limit=10000&minetype=application/font-woff' },
           { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'file-loader' }
@@ -48,7 +48,8 @@
           'process.env': {
             NODE_ENV: JSON.stringify('development')
           }
-        })
+        }),
+        new ExtractTextPlugin({ filename: '[name].css', allChunks: true })
       ],
       target: 'web'
     }
