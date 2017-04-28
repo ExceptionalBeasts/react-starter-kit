@@ -70,6 +70,7 @@
     "sinon": "^2.1.0",
     "sinon-chai": "^2.9.0",
     "style-loader": "^0.16.1",
+    "webpack": "^2.4.1",
     "webpack-closure-compiler": "^2.1.4"
   },
   "main": "index.js",
@@ -77,7 +78,7 @@
     "build": "concurrently \"npm run lint\" \"npm test\" \"webpack --progress --colors\"",
     "build:quick": "webpack -p --progress --colors",
     "lint": "eslint src/",
-    "setup": "npm i serverless aws-sdk webpack webpack-dev-server -g & npm i",
+    "setup": "npm i serverless aws-sdk webpack-dev-server -g & npm i",
     "start": "webpack-dev-server --inline --hot",
     "test": "karma start --single-run"
   }
