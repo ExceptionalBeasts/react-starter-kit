@@ -13,7 +13,7 @@ module.exports = {
     rules: [
       {
         test: [ /\.js$/ ],
-        include: [/src/],
+        include: [/src/, /mock/],
         exclude: [/\.test.js$/, /node_modules/],
         loaders: ['react-hot-loader', 'babel-loader']
       },
